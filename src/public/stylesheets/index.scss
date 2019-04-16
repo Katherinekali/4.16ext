@@ -1,0 +1,58 @@
+@import "./_minix";
+@import "./common.scss";
+* {
+    box-sizing: border-box;
+}
+
+.wrapper,
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrapper {
+    background: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 90%;
+    ul {
+        width: 100%;
+        li {
+            width: 100%;
+            height: pxTorem(50px);
+            padding: pxTorem(20px);
+            &.thir {
+                display: flex;
+                justify-content: space-between;
+            }
+            &.fiv {
+                p {
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    color: #fff;
+                }
+            }
+            label {
+                input {
+                    width: 100%;
+                    height: pxTorem(30px);
+                    background: #fff;
+                    padding-left: pxTorem(10px);
+                    border-radius: pxTorem(5px);
+                    border: 1px solid skyblue;
+                }
+                .btn {
+                    background: blue;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
